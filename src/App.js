@@ -30,7 +30,7 @@ class App extends React.Component {
       storiesEngCse: [],
       storiesEngEce: [],
 
-    
+      storiesGovt:[],
       storiesStateGovt: [],
       storiesCentralGovt: [],
 
@@ -141,6 +141,21 @@ class App extends React.Component {
           storiesEngEce: storiesEngEce,
         });
       });
+
+     firebase
+       .firestore()
+       .collection("storiesGovt")
+       .onSnapshot((snapshot) => {
+         const storiesGovt = snapshot.docs.map((story) => {
+           const data = story.data();
+           data["id"] = story.id;
+           return data;
+         });
+
+         this.setState({
+           storiesGovt: storiesGovt,
+         });
+       });
    
     firebase
       .firestore()
@@ -269,6 +284,7 @@ class App extends React.Component {
     const { storiesEngCse } = this.state;
     const { storiesEngEce } = this.state;
 
+     const { storiesGovt } = this.state;
     const { storiesStateGovt } = this.state;
     const { storiesCentralGovt } = this.state;
 
@@ -323,7 +339,7 @@ class App extends React.Component {
             <Route path="/gov">
               <Sidebar />
               <CardCollectionGov
-                topStoriesGovt={topStoriesGovt}
+                storiesGovt={storiesGovt}
                 storiesStateGovt={storiesStateGovt}
                 storiesCentralGovt={storiesCentralGovt}
               />

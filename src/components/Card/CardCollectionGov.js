@@ -19,7 +19,7 @@ const CardCollectionEng = (props) => {
         </div>
 
         <Carousel breakPoints={breakPoints}>
-          {props.topStoriesGovt.map((story) => {
+          {props.storiesGovt.map((story) => {
             return <Card2 story={story} key={story.id} />;
           })}
         </Carousel>
