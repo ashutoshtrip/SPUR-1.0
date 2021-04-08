@@ -37,17 +37,7 @@ const CardCollectionEng = (props) => {
         </Carousel>
       </div>
 
-      <div className="div3">
-        <div className="sub-heading">
-          <h2> Medical Science </h2> <br />
-        </div>
-
-        <Carousel breakPoints={breakPoints}>
-          {props.storiesMedScience.map((story) => {
-            return <Card2 story={story} key={story.id} />;
-          })}
-        </Carousel>
-      </div>
+     
     </div>
   );
 };

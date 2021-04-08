@@ -19,7 +19,7 @@ function About() {
         <div className="about-wrapper">
           <div className="div-1">
             <div className="div-1-top">
-              <img  alt ="Ashutosh Tripahthi" src="https://media-exp1.licdn.com/dms/image/C5635AQHgGlELq2Kniw/profile-framedphoto-shrink_400_400/0/1616426426486?e=1617728400&v=beta&t=69697aqKmfsoDQXhU3T_qXdoSfKsPv0TrA8Bpvh2juU" />
+              <img  alt ="Ashutosh Tripahthi" src="https://firebasestorage.googleapis.com/v0/b/spur-b1135.appspot.com/o/images%2FWhatsApp%20Image%202021-04-08%20at%208.26.33%20PM.jpeg?alt=media&token=03f14ae7-60c9-4f98-acc3-84a5e991e4b1" />
             </div>
 
             <div className="div-1-bottom">
@@ -39,7 +39,7 @@ Also this is open to all who want to share their success story for others motiva
           </div>
           <div className="div-1">
             <div className="div-1-top">
-              <img  alt ="deepak malik" src="https://media-exp1.licdn.com/dms/image/C4D35AQH8p3c_MQdUug/profile-framedphoto-shrink_400_400/0/1617644991230?e=1617732000&v=beta&t=5eKBQ9uvwby2L5kDQB37pctJ-E9RSV1j_pWxsGZN6pI" />
+              <img  alt ="deepak malik" src="https://firebasestorage.googleapis.com/v0/b/spur-b1135.appspot.com/o/images%2FWhatsApp%20Image%202021-04-08%20at%208.26.24%20PM.jpeg?alt=media&token=824f8bbd-fa0e-435a-b584-bb558d9ed322" />
             </div>
 
             <div className="div-1-bottom">

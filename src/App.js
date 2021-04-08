@@ -1,4 +1,6 @@
 import React from "react";
+import "./components/Card/CardCollection.css";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import firebase from "firebase/app";
@@ -15,6 +17,17 @@ import CardCollectionMed from "./components/Card/CardCollectionMed";
 import CardCollectionGov from "./components/Card/CardCollectionGov";
 import About from "./components/Drawer/About"
 import UnderCon from "./components/Dummy/UnderCon";
+
+import "./components/Drawer/About.css";
+import "./components/Drawer/Feedback.css";
+import "./components/Drawer/Sidebar.css";
+import "./components/Dummy/UnderCon.css";
+import "./components/Footer/Footer.css";
+import "./components/Header/Header.css";
+import "./components/navbar/navbar.css";
+import "./components/Share/Share.css";
+import "./components/Share/ShareForm.css";
+import "./components/Share/ShareHeader.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
