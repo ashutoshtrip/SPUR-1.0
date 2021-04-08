@@ -180,7 +180,7 @@ export default function ShareForm(props) {
 
               <div className="email-div">
                 <Form.Group controlId="formBasicEmail">
-                  <Form.Label className="email-label">e-mail</Form.Label>
+                  <Form.Label className="email-label">E-mail</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="enter email"
@@ -194,10 +194,10 @@ export default function ShareForm(props) {
                   </Form.Text>
                 </Form.Group>
               </div>
-              <div className="cat-select">
+              <div >
                 {" "}
                 {/*<CatSelect /> */}
-                <select
+                <select className="cat-select"
                   value={category}
                   onChange={(e) => setCatogory(e.target.value)}
                 >

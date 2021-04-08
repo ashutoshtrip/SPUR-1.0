@@ -8,6 +8,11 @@ import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
   {
+    title: "Home",
+    path: "/",
+    icon: <FaIcons.FaHome />,
+  },
+  {
     title: "Engineering",
     path: "/eng",
     icon: <FaIcons.FaGraduationCap />,

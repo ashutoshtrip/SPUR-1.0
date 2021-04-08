@@ -97,7 +97,7 @@ const Sidebar = () => {
           </div>
           <div className="header-nav">
             <div className="header_option">
-              <span className="sign"> Sign In</span>
+              <span className="sign"> {/*Sign In */} </span>
             </div>
             <div className="header_option">
               <Link to="/about">
@@ -116,7 +116,7 @@ const Sidebar = () => {
         </Nav>
         <MobBar />
         <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
+          <SidebarWrap onClick={showSidebar}>
             <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>

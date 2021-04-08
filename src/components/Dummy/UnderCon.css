@@ -23,6 +23,9 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 h7 {
@@ -47,9 +50,9 @@ h7 {
 
 }
 @media  screen and (max-width : 500px) {
-    .image-work
+    .gif
     {
-        width: 220px;
+        width: 60%;
     }
     
 }
