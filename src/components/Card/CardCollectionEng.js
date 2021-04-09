@@ -12,6 +12,8 @@ const breakPoints = [
 ];
 
 const CardCollectionEng = (props) => {
+  const val = "/eng";
+
   return (
     <div className="container">
       <div className="div1">
@@ -21,7 +23,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesEng.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id}  lasturl = {val} />;
           })}
         </Carousel>
       </div>
@@ -33,19 +35,19 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesEngCse.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id}  lasturl={val} />;
           })}
         </Carousel>
       </div>
 
       <div className="div3">
         <div className="sub-heading">
-          <h2> Electronics </h2> <br />
+          <h2> Electrical and Electronics </h2> <br />
         </div>
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesEngEce.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl = {val} />;
           })}
         </Carousel>
       </div>

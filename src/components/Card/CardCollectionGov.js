@@ -11,6 +11,7 @@ const breakPoints = [
 ];
 
 const CardCollectionEng = (props) => {
+  const val = "/gov";
   return (
     <div className="container">
       <div className="div1">
@@ -20,7 +21,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesGovt.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id}  lasturl={val}/>;
           })}
         </Carousel>
       </div>
@@ -32,7 +33,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesStateGovt.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl={val}  />;
           })}
         </Carousel>
       </div>
@@ -44,7 +45,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesCentralGovt.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id}  lasturl={val} />;
           })}
         </Carousel>
       </div>

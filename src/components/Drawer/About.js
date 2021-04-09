@@ -25,7 +25,7 @@ function About() {
             <div className="div-1-bottom">
               <h3 className="div-1-name"> Ashutosh Tripathi  < a href="https://www.linkedin.com/in/ashutosh-tripathi-279747166/"> <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin} size="1x" /> </a>
    </h3>
-              <h4 className="div-1-position">  Founder   </h4>
+              <h5 className="div-1-position">  Founder   </h5>
               <p className="div-1-story">
               I am Ashutosh Tripathi Pre-final year student. Skilled in React.js, C++, Javascript, frontend development. Strong entrepreneurship, professional with a Bachelor of Technology from the National Institute of Technology Delhi. Headed the team of 4 members associated with the development of the Site. Worked on most of the frontend and designed this website. Providing success stories for students of their respective fields of interest. The content focuses on the leaders beginning the struggle and the journey to their current positions. The website will widely help the students of science, technology, etc to find the pioneers of their career interest. Also, this is open to all who want to share their success story for other's motivation.
               </p>

@@ -11,6 +11,7 @@ const breakPoints = [
 ];
 
 const CardCollectionEng = (props) => {
+  const val ="/exam";
   return (
     <div className="container">
       <div className="div1">
@@ -20,7 +21,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesExam.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl={val} />;
           })}
         </Carousel>
       </div>
@@ -32,7 +33,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesExamJEE.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl={val} />;
           })}
         </Carousel>
       </div>
@@ -44,7 +45,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesExamNEET.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl={val} />;
           })}
         </Carousel>
       </div>
@@ -56,7 +57,7 @@ const CardCollectionEng = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.storiesExamUpsc.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl={val} />;
           })}
         </Carousel>
       </div>

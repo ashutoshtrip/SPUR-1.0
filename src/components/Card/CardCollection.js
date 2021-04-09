@@ -11,7 +11,10 @@ const breakPoints = [
 ];
 
 const CardCollection = (props) => {
- 
+ const valeng = "/eng"; 
+ const valmed = "/med";
+ const valexam = "/exam";
+ const valgov = "/gov";
   return (
     <div className="container">
       <div className="div1">
@@ -32,7 +35,7 @@ const CardCollection = (props) => {
         </div>
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesEng.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl = {valeng}/>;
           })}
         </Carousel>
       </div>
@@ -43,7 +46,7 @@ const CardCollection = (props) => {
         </div>
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesGovt.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl ={valgov} />;
           })}
         </Carousel>
       </div>
@@ -55,7 +58,7 @@ const CardCollection = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesExam.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl ={valexam} />;
           })}
         </Carousel>
       </div>
@@ -67,7 +70,7 @@ const CardCollection = (props) => {
 
         <Carousel breakPoints={breakPoints}>
           {props.topStoriesMed.map((story) => {
-            return <Card2 story={story} key={story.id} />;
+            return <Card2 story={story} key={story.id} lasturl ={valmed} />;
           })}
         </Carousel>
       </div>
